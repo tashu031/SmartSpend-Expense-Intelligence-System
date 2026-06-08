@@ -1,2 +1,22 @@
-# SmartSpend-Expense-Intelligence-System
-SmartSpend is a Personal Finance &amp; Expense Intelligence System that helps users manage income, expenses, budgets, and savings in one place. Built with Python and MySQL, it provides expense tracking, budget management, savings analysis, spending reports, and visual insights through charts and graphs.
+# SmartSpend - Personal Finance & Expense Intelligence System
+
+## Technologies
+- Python
+- MySQL
+
+## Project Overview
+SmartSpend is a personal finance management system that helps users track income, expenses, budgets, and savings while providing spending analytics and financial insights.
+
+## Features
+- User Login & Registration
+- Income Management
+- Expense Tracking
+- Budget Management
+- Savings Analysis
+- Expense Reports
+- Data Visualization
+  
+
+- ## Team Members
+- Tashu Gupta
+- Sonam
