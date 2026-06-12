@@ -16,7 +16,5 @@ SmartSpend is a personal finance management system that helps users track income
 - Expense Reports
 - Data Visualization
   
-
-- ## Team Members
+# Project Developed By
 - Tashu Gupta
-- Sonam
