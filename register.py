@@ -1,26 +1,29 @@
-import pyodbc
-conn = pyodbc.connect(
-    "DRIVER={ODBC Driver 17 for SQL Server};"
-    "SERVER=localhost\\SQLEXPRESS;"
-    "DATABASE=smart_spend ;"
-    "Trusted_Connection=yes;"
-)
+from database import get_connection
 
-cursor = conn.cursor()
+def register_user():
 
-name = input("enter your name : ")
-email = input("email :")
-password = input("password :")
+    conn = get_connection()
 
-sql = """
-insert into users(name,email,password)
-values(?,?,?)
+    if conn is None:
+        print("Database connection failed!")
+        return
 
-"""
-cursor.execute(sql,(name,email,password))
-conn.commit()
+    cursor = conn.cursor()
 
-print("User registered successfully")
+    name = input("Enter Your Name: ")
+    email = input("Email: ")
+    password = input("Password: ")
 
-cursor.close()
-conn.close()
+    sql = """
+    INSERT INTO users(name, email, password)
+    VALUES (?, ?, ?)
+    """
+
+    cursor.execute(sql, (name, email, password))
+
+    conn.commit()
+
+    print("User registered successfully!")
+
+    cursor.close()
+    conn.close()
