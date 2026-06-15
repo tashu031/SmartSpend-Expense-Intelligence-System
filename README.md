@@ -25,16 +25,21 @@ The project is developed as part of an internship program to demonstrate the int
 * User Registration
 * User Login & Logout
 * Session Management
-* Duplicate Email Validation
+* Duplicate Email & Email Format Validation
+* Password Length Validation
 
 ### Income Management
 
 * Add Income
+* Update Income
+* Delete Income
 * View Income History
 
 ### Expense Management
 
 * Add Expense
+* Update Expense
+* delete Expense
 * View Expense History
 
 ### Financial Analytics
@@ -103,10 +108,11 @@ Stores user expense records.
 
 1. User registers an account.
 2. User logs into the system.
-3. User adds income records.
-4. User adds expense records.
+3. User can add, update, and delete income records.
+4. User can add, update, and delete expense records.
 5. User views financial reports and analytics.
 6. System generates summaries and budget insights.
+7. User can logout securely.
 
 ---
 
@@ -132,15 +138,16 @@ python main.py
 
 ## Future Enhancements
 
-* Update Expense Records
-* Delete Expense Records
 * Password Encryption
 * Export Reports to PDF/Excel
 * Graphical Dashboard
+* Data Visualization Charts
 
 ---
 
 ## Author
 
 Tashu Gupta
+
+Smart Expense Intelligence System
 

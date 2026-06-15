@@ -38,5 +38,5 @@ def login_user():
         print("Login successful!")
         return {"user_id": user[0], "name": user[1], "email": user[2]}
 
-    print("Invalid Credentials!")
+    print("❌ Invalid Credentials!")
     return None

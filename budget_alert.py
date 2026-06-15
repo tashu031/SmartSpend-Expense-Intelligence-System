@@ -20,6 +20,7 @@ def budget_alert(user_id=None):
         return
     if budget <= 0:
         print("Budget must be greater than 0!")
+        cursor.close()
         conn.close()
         return
     
@@ -43,7 +44,7 @@ def budget_alert(user_id=None):
     print(f"Total Expense  : ₹{total_expense}")
 
     if total_expense > budget:
-        print(f"⚠ Budget Exceeded by ₹{excess}")
+        print(f"⚠️ Budget Exceeded by ₹{excess}")
     else:
         print(f"✅ Within Budget\nRemaining Budget : ₹{remaining}")
 
